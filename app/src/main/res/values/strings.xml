@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="banco_pichincha">BANCO PICHINCHA</string>
+    <string name="version_label">Versión: 9.5.0</string>
+    <string name="login_info">Para ingresar, debes utilizar el mismo usuario y contraseña de tu Banca web.</string>
+    <string name="hint_usuario">MiContr</string>
+    <string name="hint_password">••••••••</string>
+    <string name="mostrar">MOSTRAR</string>
+    <string name="olvide_credenciales">Olvidé mi usuario y / o contraseña</string>
+    <string name="acepto_terminos">Acepto términos y condiciones</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrate">¿Eres nuevo? regístrate</string>
+    <string name="seguridad_mensaje">Cuida tus contraseñas, no las compartas con nadie.</string>
+    <string name="metodo_usuario">Usuario y contraseña</string>
+    <string name="metodo_huella">Huella / Face ID</string>
+    <string name="metodo_pin">Pin de 6 dígitos</string>
+    <string name="ubicacion">Ubícanos</string>
+    <string name="clave_digital">Clave digital</string>
+    <string name="llamanos">Llámanos</string>
+    <string name="otro_usuario">¿Ingresar con otro usuario?</string>
+    <string name="illustration_content_desc">Ilustración de acceso a la banca móvil</string>
+</resources>

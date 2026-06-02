@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_margin_horizontal">20dp</dimen>
+    <dimen name="login_card_radius">12dp</dimen>
+    <dimen name="login_button_radius">24dp</dimen>
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".loginbanco">
+
+    <!-- HEADER -->
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ilogo"
+        app:layout_constraintEnd_toStartOf="@+id/tv_banco"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_banco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:text="BANCO PICHINCHA"
+        android:textColor="#002855"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ILUSTRACIÓN -->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versión: 9.5.0"
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_banco"
+        app:layout_constraintStart_toStartOf="@+id/img_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_banco" />
+
+    <ImageView
+        android:id="@+id/img_illustration"
+        android:layout_width="292dp"
+        android:layout_height="269dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ilogo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_banco"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/img_logo"
+        app:layout_constraintTop_toTopOf="@+id/tv_version" />
+
+    <TextView
+        android:id="@+id/tv_seguridad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:text="Cuida tus contraseñas, no las compartas con nadie."
+        android:textColor="#002855"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_illustration"
+        app:layout_constraintStart_toStartOf="@+id/img_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/img_illustration" />
+
+    <!-- 3 TARJETAS -->
+    <LinearLayout
+        android:id="@+id/row_metodos"
+        android:layout_width="327dp"
+        android:layout_height="91dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/tv_seguridad"
+        app:layout_constraintStart_toStartOf="@+id/tv_seguridad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seguridad">
+
+        <LinearLayout
+            android:id="@+id/card_usuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:minHeight="90dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Usuario y\ncontraseña"
+                android:textColor="#002855"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_huella"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:minHeight="90dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/huella" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Huella /\nFace ID"
+                android:textColor="#002855"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_pin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:minHeight="90dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/pin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Pin de\n6 dígitos"
+                android:textColor="#002855"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FOOTER -->
+    <LinearLayout
+        android:id="@+id/row_footer"
+        android:layout_width="317dp"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@+id/row_metodos"
+        app:layout_constraintStart_toStartOf="@+id/row_metodos"
+        app:layout_constraintTop_toBottomOf="@+id/row_metodos">
+
+        <LinearLayout
+            android:id="@+id/action_ubicacion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ubicacion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ubícanos"
+                android:textColor="#2B71B9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_clave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/key" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Clave digital"
+                android:textColor="#2B71B9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_llamar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Llámanos"
+                android:textColor="#2B71B9"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_otro_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="¿Ingresar con otro usuario?"
+        android:textColor="#2B71B9"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/row_footer"
+        app:layout_constraintStart_toStartOf="@+id/row_footer"
+        app:layout_constraintTop_toBottomOf="@+id/row_footer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
