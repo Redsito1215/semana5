@@ -8,7 +8,6 @@
     android:background="#FFFFFF"
     tools:context=".loginbanco">
 
-    <!-- HEADER -->
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="28dp"
@@ -34,7 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- ILUSTRACIÓN -->
     <TextView
         android:id="@+id/tv_version"
         android:layout_width="wrap_content"
@@ -73,7 +71,6 @@
         app:layout_constraintStart_toStartOf="@+id/img_illustration"
         app:layout_constraintTop_toBottomOf="@+id/img_illustration" />
 
-    <!-- 3 TARJETAS -->
     <LinearLayout
         android:id="@+id/row_metodos"
         android:layout_width="327dp"
@@ -174,7 +171,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- FOOTER -->
     <LinearLayout
         android:id="@+id/row_footer"
         android:layout_width="317dp"
